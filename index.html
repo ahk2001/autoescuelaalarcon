@@ -2591,6 +2591,46 @@
     body.video-intro-done .floating-brand-wa {
       transition: opacity 1.3s cubic-bezier(0.16, 1, 0.3, 1) 1.85s, transform 1.3s cubic-bezier(0.16, 1, 0.3, 1) 1.85s, visibility 1.3s ease 1.85s, box-shadow 0.25s ease, background 0.25s ease;
     }
+
+    /* Ajustes de botones en Mobile para evitar cortes, desbordamientos o desalineación */
+    @media (max-width: 768px) {
+      .btn-editorial {
+        white-space: normal;
+        text-align: center;
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        line-height: 1.3;
+      }
+
+      .prof-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .prof-card-footer .btn-editorial,
+      .dgt-results-banner .btn-editorial {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .dgt-results-banner {
+        padding: 1.35rem 1.25rem;
+      }
+
+      .gallery-nav-btn,
+      .testimonial-arrow-btn {
+        min-width: 44px;
+        min-height: 44px;
+        flex-shrink: 0;
+      }
+
+      .editorial-menu-btn {
+        padding: 10px 16px;
+        flex-shrink: 0;
+      }
+    }
   </style>
 
 </head>
